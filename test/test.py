@@ -109,7 +109,7 @@ def get_features():
 
 
 if __name__ == '__main__':
-    data_dir = '/home/guyos/Yandex.Disk/raxel/data/'
+    data_dir = '/home/guyos/Yandex.Disk/company/data/'
     save_dir = '/home/guyos/Downloads/save/'
     r = redis.Redis(host='localhost')
 

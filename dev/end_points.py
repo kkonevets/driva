@@ -94,7 +94,7 @@ def get_centers(user_ends, rad=1):
 
 
 if __name__ == '__main__':
-    end_points = pd.read_csv('/home/guyos/Yandex.Disk/raxel/data/dots.csv')
+    end_points = pd.read_csv('/home/guyos/Yandex.Disk/company/data/dots.csv')
     end_points.PointDate = end_points.PointDate.apply(dateutil.parser.parse)
     end_points['weekday'] = end_points.PointDate.apply(datetime.weekday) + 1
 
@@ -109,7 +109,7 @@ if __name__ == '__main__':
     centers.to_csv('/home/guyos/Downloads/dots_res2.csv')
 
 
-    taxi_pass = pd.read_csv('/home/guyos/Yandex.Disk/raxel/data/taxi_pass.csv.gz')
+    taxi_pass = pd.read_csv('/home/guyos/Yandex.Disk/company/data/taxi_pass.csv.gz')
 
 
 

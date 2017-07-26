@@ -1,14 +1,14 @@
-tsql -S raxel-ab-sql  -U  -P 
+tsql -S company-ab-sql  -U  -P 
 
-[raxel-ab-sql]
+[company-ab-sql]
 host = 
 Port = 1433
 tds version = 7.0
 dump file = /tmp/freetds.log
 
-[raxel-ab-sql]
+[company-ab-sql]
 Driver = FreeTDS
 Trace = No
-ServerName = raxel-ab-sql
+ServerName = company-ab-sql
 Port = 1433
 TDS_Version = 8.0

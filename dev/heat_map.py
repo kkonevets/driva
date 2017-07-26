@@ -185,7 +185,7 @@ def split_by_size(zipped_users, cpu_cores):
 
 if __name__ == '__main__':
 
-    data_dir = '/home/guyos/Yandex.Disk/raxel/data/passanger/'
+    data_dir = '/home/guyos/Yandex.Disk/company/data/passanger/'
     pics_dir = data_dir + 'plots/'
 
     zipped_users = test.zipped_tripples(data_dir, n1='tracks', n2='rich', n3='incoming')

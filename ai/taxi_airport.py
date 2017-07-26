@@ -357,7 +357,7 @@ if __name__ == '__main__':
     server = ''
     user = ''
     pas = ''
-    engine = create_engine("mssql+pyodbc://%s:%s@raxel-ab-sql/?trusted_connection=no" % (user, pas))
+    engine = create_engine("mssql+pyodbc://%s:%s@company-ab-sql/?trusted_connection=no" % (user, pas))
 
     device_token = '9fbbbd45-1e8d-4430-92b5-96f8fd119b7c'
     qtracks = '''

@@ -205,7 +205,7 @@ def get_projected_ways(mline, host='localhost'):
 
 # import numpy as np
 # import pandas as pd
-# from ai.raxel_rdp import rdp
+# from ai.company_rdp import rdp
 # import ai.tripmatching as tm
 # import shapely.geometry as geom
 # import psycopg2
@@ -217,14 +217,14 @@ def get_projected_ways(mline, host='localhost'):
 # from sklearn.cluster import DBSCAN
 #
 # import ai.tripmatching as tm
-# from ai.raxel_rdp import rdp
+# from ai.company_rdp import rdp
 #
 # from shapely.ops import cascaded_union
 #
 #
 #
 #
-# track = pd.read_csv('/home/guyos/Yandex.Disk/raxel/dima.csv')
+# track = pd.read_csv('/home/guyos/Yandex.Disk/company/dima.csv')
 # dfl = delete_outliers_from_track(track)
 # dfl.plot.scatter(x='Longitude', y='Latitude')
 # np.unique(dfl['labels'])

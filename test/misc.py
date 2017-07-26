@@ -18,4 +18,4 @@ for key in keys:
 df = pd.DataFrame(l, columns=['IncomingTrackId', 'StartDate', 'prediction', 'timestamp'])
 df.sort_values(by='timestamp', axis=0, inplace=True)
 df.drop('timestamp', inplace=True, axis=1)
-df.to_csv('/home/raxel/preds.csv', index=False)
+df.to_csv('/home/company/preds.csv', index=False)

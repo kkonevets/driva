@@ -164,7 +164,7 @@ if __name__ == '__main__':
     # fname = 'data_incoming.csv.gz'
     fname = '0dbe23cb-db3d-4f3a-ada1-a700f1e9b668_incoming.csv.gz'
     # fname = 'stat_petr.csv'
-    path_to_incoming = '/home/guyos/Yandex.Disk/raxel/%s' % fname
+    path_to_incoming = '/home/guyos/Yandex.Disk/company/%s' % fname
 
     incoming_points = pr.read_points(path_to_incoming)
     # track = incoming_points.copy()
@@ -189,7 +189,7 @@ if __name__ == '__main__':
     poss = pd.concat(positions)
     print(poss)
     # poss[poss.theta_0 > 130]
-    # poss.to_csv('/home/guyos/Yandex.Disk/raxel/poss.csv')
+    # poss.to_csv('/home/guyos/Yandex.Disk/company/poss.csv')
     #
     # poss.plot(x='theta_0', y = 'rstd', kind='scatter')
 
@@ -197,9 +197,9 @@ if __name__ == '__main__':
 
     le = preprocessing.LabelEncoder()
 
-    tracks = pr.read_points('/home/guyos/Yandex.Disk/raxel/0dbe23cb-db3d-4f3a-ada1-a700f1e9b668_tracks.csv.gz')
+    tracks = pr.read_points('/home/guyos/Yandex.Disk/company/0dbe23cb-db3d-4f3a-ada1-a700f1e9b668_tracks.csv.gz')
     m = poss.merge(tracks[['IncomingTrackId', 'TrackOrigin']], left_on='name', right_on='IncomingTrackId')
-    m.to_csv('/home/guyos/Yandex.Disk/raxel/poss.csv')
+    m.to_csv('/home/guyos/Yandex.Disk/company/poss.csv')
     m['type'] = le.fit_transform(m['TrackOrigin'])
 
     data = poss[['time_delta', 'theta_0', 'rstd']]
@@ -285,7 +285,7 @@ if __name__ == '__main__':
     # d[name] / 60
     # len(d)
 
-    # pd.DataFrame.from_dict(d, orient='index').to_csv('/home/guyos/Yandex.Disk/raxel/d2.csv')
+    # pd.DataFrame.from_dict(d, orient='index').to_csv('/home/guyos/Yandex.Disk/company/d2.csv')
     subtr = np.concatenate([poss['name'].unique(), bad_ids])
     not_valid = set(incoming_points['IncomingTrackId'].unique()).difference(subtr)
 
@@ -318,7 +318,7 @@ if __name__ == '__main__':
                             # 'AccelerationZOriginal'
                         ], ylim=(0, 180))
         fig = ax.get_figure()
-        fig.savefig('/home/guyos/Yandex.Disk/raxel/alex/not valid2/%s.png' % name, bbox_inches='tight')
+        fig.savefig('/home/guyos/Yandex.Disk/company/alex/not valid2/%s.png' % name, bbox_inches='tight')
 
     #################################################################################
 

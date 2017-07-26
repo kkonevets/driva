@@ -5,7 +5,7 @@ from sklearn.cluster import DBSCAN
 
 import ai.qpostgis as qpg
 import ai.tripmatching as tm
-from ai.raxel_rdp import rdp
+from ai.company_rdp import rdp
 
 
 def delete_outliers_from_track(track):

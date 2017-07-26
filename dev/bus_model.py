@@ -227,7 +227,7 @@ def unite_users(data_dir, host='localhost'):
 
 if __name__ == '__main__':
     data_dir = '/home/guyos/Documents/bus_detection/50_50/'
-    # data_dir = '/home/guyos/Yandex.Disk/raxel/data/dima/'
+    # data_dir = '/home/guyos/Yandex.Disk/company/data/dima/'
     host = 'localhost'  # 'zeus.local'
 
     # bus_inspection(data_dir)
@@ -332,7 +332,7 @@ if __name__ == '__main__':
 
     # #######################################################################################
     #
-    # # data_dir = '/home/guyos/Yandex.Disk/raxel/'
+    # # data_dir = '/home/guyos/Yandex.Disk/company/'
     # # host = 'localhost'  # 'zeus.local'
     # #
     # # path_to_tracks = data_dir + 'RichTrack_dima_bus.csv'

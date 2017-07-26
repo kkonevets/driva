@@ -127,7 +127,7 @@ class Features(object):
     def _connect(self):
         self._redis_connection = redis.Redis(host='localhost')
 
-        con_string = "mssql+pyodbc://%s:%s@raxel-ab-sql/?trusted_connection=no"
+        con_string = "mssql+pyodbc://%s:%s@company-ab-sql/?trusted_connection=no"
         self._mssql_engine = create_engine(con_string % (USER, MSSQLPASSWORD))
         self._mssql_connection = self._mssql_engine.connect()
 
@@ -222,7 +222,7 @@ def save_features(features):
     if len(features.ftrs) == 0:
         return
 
-    con_string = "mssql+pyodbc://%s:%s@raxel-ab-sql/?trusted_connection=no"
+    con_string = "mssql+pyodbc://%s:%s@company-ab-sql/?trusted_connection=no"
     engine = create_engine(con_string % (USER, MSSQLPASSWORD))
     Session = sessionmaker(bind=engine)
     session = Session()
@@ -276,7 +276,7 @@ def save_features(features):
 # USER = ''
 # MSSQLPASSWORD = ''
 #
-# engine = create_engine("mssql+pyodbc://%s:%s@raxel-ab-sql/?trusted_connection=no" % (USER, MSSQLPASSWORD))
+# engine = create_engine("mssql+pyodbc://%s:%s@company-ab-sql/?trusted_connection=no" % (USER, MSSQLPASSWORD))
 #
 # Session = sessionmaker(bind=engine)
 # session = Session()

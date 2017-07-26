@@ -17,13 +17,13 @@ with open('./etc/queries/incoming', 'r') as fquery:
 #  order by num desc
 
 
-# server='raxel-dwhtest.raxeltelematics.local'
+# server='company-dwhtest.companytelematics.local'
 server = ''
 user = ''
 pas = ''
 conn = pymssql.connect(server=server, user=user, password=pas)
 
-data_dir = 'E:\\Kirill\\YandexDisk\\raxel\\data\\'
+data_dir = 'E:\\Kirill\\YandexDisk\\company\\data\\'
 
 
 # users = ('f1de1c4b-323c-420a-a68f-ab8aa9960316',)

@@ -22,7 +22,7 @@ import ai.features as ft
 import ai.qpostgis as qpg
 import ai.ways as ways
 import ai.tripmatching as tm
-from ai.raxel_rdp import rdp
+from ai.company_rdp import rdp
 
 r = redis.Redis(host='localhost')
 
@@ -215,5 +215,5 @@ if __name__ == "__main__":
 
     # print(get_data_dir())
 
-    # track = pd.read_csv('/home/guyos/Yandex.Disk/raxel/data/track.csv')
+    # track = pd.read_csv('/home/guyos/Yandex.Disk/company/data/track.csv')
     # track = ways.delete_outliers_from_track(track)

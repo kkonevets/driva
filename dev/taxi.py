@@ -252,7 +252,7 @@ def sample_taxi_original(incoming_points, tracks):
 
 
 if __name__ == '__main__':
-    data_dir = '/home/guyos/Yandex.Disk/raxel/data/test/'
+    data_dir = '/home/guyos/Yandex.Disk/company/data/test/'
     zipped_users = test.zipped_tripples(data_dir, n1='tracks', n2='rich', n3='incoming')
 
     save_dir = '/home/guyos/Downloads/varlam/'
@@ -274,8 +274,8 @@ if __name__ == '__main__':
     ########################################################################
 
 
-    taxi_pass = pd.read_csv('/home/guyos/Yandex.Disk/raxel/data/taxi/taxi_pass.csv.gz')
-    taxi_pass_all = pd.read_csv('/home/guyos/Yandex.Disk/raxel/data/taxi/taxi_pass_all.csv.gz')
+    taxi_pass = pd.read_csv('/home/guyos/Yandex.Disk/company/data/taxi/taxi_pass.csv.gz')
+    taxi_pass_all = pd.read_csv('/home/guyos/Yandex.Disk/company/data/taxi/taxi_pass_all.csv.gz')
 
     token = '3a2de908-215e-4a2c-b5d4-2db895f126bf'.lower()
 

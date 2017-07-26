@@ -8,7 +8,7 @@ user = ''
 pas = ''
 conn = pymssql.connect(server=server, user=user, password=pas)
 
-data_dir = 'E:\\Kirill\\YandexDisk\\raxel\\data\\'
+data_dir = 'E:\\Kirill\\YandexDisk\\company\\data\\'
 
 
 def chunck_query(connection, query_text, file_name, chunksize=200000):

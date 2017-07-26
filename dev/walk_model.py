@@ -60,7 +60,7 @@ ax[1].set_ylabel('|Y|[g]')
 # A - 0.09 - 2.3
 
 
-df2.to_csv('/home/guyos/raxel/df2.csv')
+df2.to_csv('/home/guyos/company/df2.csv')
 
 # %%
 

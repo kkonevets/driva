@@ -13,7 +13,7 @@ from functools import partial
 
 import ai.cmatching as cmatching
 import pandas as pd
-from ai.raxel_rdp import rdp
+from ai.company_rdp import rdp
 
 # SMOOTHING
 

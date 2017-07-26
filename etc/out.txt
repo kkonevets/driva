@@ -1,0 +1,516 @@
+--------------------------------------------------------------------------------
+PATH: '/'
+         5181 function calls (4928 primitive calls) in 0.007 seconds
+
+   Ordered by: internal time, call count
+   List reduced from 422 to 30 due to restriction <30>
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+    45/10    0.000    0.000    0.002    0.000 /var/www/driva/venv/lib/python3.5/sre_parse.py:491(_parse)
+     78/9    0.000    0.000    0.001    0.000 /var/www/driva/venv/lib/python3.5/sre_compile.py:64(_compile)
+      317    0.000    0.000    0.000    0.000 /var/www/driva/venv/lib/python3.5/sre_parse.py:157(__getitem__)
+        1    0.000    0.000    0.000    0.000 {built-in method marshal.loads}
+   108/42    0.000    0.000    0.000    0.000 /var/www/driva/venv/lib/python3.5/sre_parse.py:167(getwidth)
+       78    0.000    0.000    0.000    0.000 /var/www/driva/venv/lib/python3.5/sre_parse.py:105(__init__)
+      253    0.000    0.000    0.000    0.000 /var/www/driva/venv/lib/python3.5/sre_parse.py:226(__next)
+      770    0.000    0.000    0.000    0.000 {method 'append' of 'list' objects}
+     30/9    0.000    0.000    0.002    0.000 /var/www/driva/venv/lib/python3.5/sre_parse.py:429(_parse_sub)
+        1    0.000    0.000    0.000    0.000 {built-in method builtins.compile}
+  641/601    0.000    0.000    0.000    0.000 {built-in method builtins.len}
+      489    0.000    0.000    0.000    0.000 {built-in method builtins.isinstance}
+       67    0.000    0.000    0.000    0.000 /var/www/driva/venv/lib/python3.5/sre_parse.py:362(_escape)
+       12    0.000    0.000    0.000    0.000 {built-in method __new__ of type object at 0x994be0}
+        9    0.000    0.000    0.000    0.000 {built-in method builtins.__build_class__}
+      137    0.000    0.000    0.000    0.000 /var/www/driva/venv/lib/python3.5/sre_parse.py:247(get)
+        9    0.000    0.000    0.000    0.000 /var/www/driva/venv/lib/python3.5/sre_compile.py:412(_compile_info)
+       10    0.000    0.000    0.003    0.000 /var/www/driva/venv/lib/python3.5/re.py:278(_compile)
+        4    0.000    0.000    0.000    0.000 {method 'match' of '_sre.SRE_Pattern' objects}
+      183    0.000    0.000    0.000    0.000 {built-in method builtins.min}
+       17    0.000    0.000    0.000    0.000 /var/www/driva/venv/lib/python3.5/sre_compile.py:248(_optimize_charset)
+      115    0.000    0.000    0.000    0.000 /var/www/driva/venv/lib/python3.5/sre_parse.py:153(__len__)
+        9    0.000    0.000    0.003    0.000 /var/www/driva/venv/lib/python3.5/sre_compile.py:531(compile)
+       17    0.000    0.000    0.000    0.000 /var/www/driva/venv/lib/python3.5/sre_compile.py:221(_compile_charset)
+       29    0.000    0.000    0.000    0.000 /var/www/driva/venv/lib/python3.5/site-packages/jinja2/nodes.py:164(iter_child_nodes)
+        1    0.000    0.000    0.003    0.003 /var/www/driva/venv/lib/python3.5/site-packages/jinja2/lexer.py:410(__init__)
+        1    0.000    0.000    0.000    0.000 /var/www/driva/venv/lib/python3.5/site-packages/jinja2/compiler.py:761(visit_Template)
+       58    0.000    0.000    0.000    0.000 {built-in method builtins.getattr}
+      111    0.000    0.000    0.000    0.000 /var/www/driva/venv/lib/python3.5/sre_parse.py:242(match)
+       16    0.000    0.000    0.000    0.000 /var/www/driva/venv/lib/python3.5/re.py:240(escape)
+
+
+--------------------------------------------------------------------------------
+
+10.2.0.8 - - [27/Jan/2017 01:23:36] "GET / HTTP/1.1" 200 -
+--------------------------------------------------------------------------------
+PATH: '/'
+         4784563 function calls (4776026 primitive calls) in 11.702 seconds
+
+   Ordered by: internal time, call count
+   List reduced from 2724 to 30 due to restriction <30>
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+     1908    3.196    0.002    3.208    0.002 /var/www/driva/venv/lib/python3.5/site-packages/shapely/topology.py:63(__call__)
+   100358    0.967    0.000    5.470    0.000 /var/www/driva/venv/lib/python3.5/site-packages/rdp/__init__.py:18(pldist)
+   100358    0.768    0.000    2.495    0.000 /var/www/driva/venv/lib/python3.5/site-packages/numpy/linalg/linalg.py:1723(det)
+341414/341351    0.768    0.000    0.773    0.000 {built-in method numpy.core.multiarray.array}
+   200824    0.753    0.000    2.018    0.000 /var/www/driva/venv/lib/python3.5/site-packages/numpy/linalg/linalg.py:1976(norm)
+   200717    0.637    0.000    0.637    0.000 {built-in method numpy.core.multiarray.dot}
+       12    0.580    0.048    0.580    0.048 {method 'execute' of 'psycopg2.extensions.cursor' objects}
+   337286    0.241    0.000    1.007    0.000 /var/www/driva/venv/lib/python3.5/site-packages/numpy/core/numeric.py:414(asarray)
+     3816    0.237    0.000    0.242    0.000 /var/www/driva/venv/lib/python3.5/site-packages/shapely/topology.py:76(__call__)
+   100374    0.203    0.000    0.203    0.000 {method 'astype' of 'numpy.generic' objects}
+   100358    0.177    0.000    0.340    0.000 /var/www/driva/venv/lib/python3.5/site-packages/numpy/linalg/linalg.py:139(_commonType)
+  1063/13    0.171    0.000    5.658    0.435 /var/www/driva/venv/lib/python3.5/site-packages/rdp/__init__.py:37(_rdp)
+   401432    0.167    0.000    0.239    0.000 /var/www/driva/venv/lib/python3.5/site-packages/numpy/linalg/linalg.py:111(isComplexType)
+   201360    0.157    0.000    0.157    0.000 {method 'ravel' of 'numpy.ndarray' objects}
+736685/736671    0.151    0.000    0.151    0.000 {built-in method builtins.issubclass}
+   100358    0.136    0.000    0.214    0.000 /var/www/driva/venv/lib/python3.5/site-packages/numpy/linalg/linalg.py:209(_assertNdSquareness)
+     5756    0.130    0.000    0.274    0.000 /var/www/driva/venv/lib/python3.5/site-packages/scipy/interpolate/interpolate.py:1633(_construct_from_derivatives)
+    26964    0.101    0.000    0.106    0.000 /var/www/driva/venv/lib/python3.5/site-packages/pandas/core/common.py:180(_maybe_box_datetimelike)
+       12    0.089    0.007    0.089    0.007 {built-in method psycopg2._psycopg._connect}
+        7    0.079    0.011    0.085    0.012 {built-in method pandas.tslib.array_to_datetime}
+   100358    0.077    0.000    0.097    0.000 /var/www/driva/venv/lib/python3.5/site-packages/numpy/linalg/linalg.py:198(_assertRankAtLeast2)
+       23    0.072    0.003    0.073    0.003 /var/www/driva/venv/lib/python3.5/site-packages/shapely/ops.py:116(cascaded_union)
+   100358    0.066    0.000    0.066    0.000 /var/www/driva/venv/lib/python3.5/site-packages/numpy/linalg/linalg.py:219(_assertNoEmpty2d)
+   100370    0.066    0.000    0.097    0.000 /var/www/driva/venv/lib/python3.5/site-packages/numpy/core/numeric.py:2064(isscalar)
+    11512    0.063    0.000    0.105    0.000 /var/www/driva/venv/lib/python3.5/site-packages/scipy/special/basic.py:2122(comb)
+   216868    0.063    0.000    0.072    0.000 {built-in method builtins.isinstance}
+   100358    0.056    0.000    0.080    0.000 /var/www/driva/venv/lib/python3.5/site-packages/numpy/linalg/linalg.py:124(_realType)
+   100959    0.055    0.000    0.115    0.000 {built-in method builtins.max}
+     5891    0.046    0.000    0.132    0.000 /var/www/driva/venv/lib/python3.5/site-packages/shapely/geometry/base.py:62(geom_factory)
+197333/191956    0.044    0.000    0.068    0.000 {built-in method builtins.len}
+
+
+--------------------------------------------------------------------------------
+
+10.2.0.11 - - [27/Jan/2017 01:25:23] "POST / HTTP/1.1" 200 -
+--------------------------------------------------------------------------------
+PATH: '/'
+         437946 function calls (434666 primitive calls) in 0.827 seconds
+
+   Ordered by: internal time, call count
+   List reduced from 2016 to 30 due to restriction <30>
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+        6    0.124    0.021    0.124    0.021 {method 'execute' of 'psycopg2.extensions.cursor' objects}
+        6    0.043    0.007    0.043    0.007 {built-in method psycopg2._psycopg._connect}
+     3797    0.035    0.000    0.179    0.000 /var/www/driva/venv/lib/python3.5/site-packages/rdp/__init__.py:18(pldist)
+        2    0.034    0.017    0.034    0.017 {built-in method gc.collect}
+     3797    0.028    0.000    0.085    0.000 /var/www/driva/venv/lib/python3.5/site-packages/numpy/linalg/linalg.py:1723(det)
+18354/18291    0.028    0.000    0.030    0.000 {built-in method numpy.core.multiarray.array}
+     7606    0.028    0.000    0.060    0.000 /var/www/driva/venv/lib/python3.5/site-packages/numpy/linalg/linalg.py:1976(norm)
+      710    0.017    0.000    0.035    0.000 /var/www/driva/venv/lib/python3.5/site-packages/scipy/interpolate/interpolate.py:1633(_construct_from_derivatives)
+    53621    0.016    0.000    0.022    0.000 {built-in method builtins.isinstance}
+    16821    0.012    0.000    0.039    0.000 /var/www/driva/venv/lib/python3.5/site-packages/numpy/core/numeric.py:414(asarray)
+34446/31703    0.009    0.000    0.012    0.000 {built-in method builtins.len}
+       48    0.009    0.000    0.009    0.000 /var/www/driva/venv/lib/python3.5/site-packages/shapely/topology.py:63(__call__)
+     7595    0.008    0.000    0.008    0.000 {built-in method numpy.core.multiarray.dot}
+     2546    0.008    0.000    0.008    0.000 /var/www/driva/venv/lib/python3.5/site-packages/pandas/core/common.py:180(_maybe_box_datetimelike)
+     1420    0.008    0.000    0.014    0.000 /var/www/driva/venv/lib/python3.5/site-packages/scipy/special/basic.py:2122(comb)
+    37294    0.008    0.000    0.008    0.000 {built-in method builtins.issubclass}
+        4    0.007    0.002    0.007    0.002 {method 'recv_into' of '_socket.socket' objects}
+     3813    0.007    0.000    0.007    0.000 {method 'astype' of 'numpy.generic' objects}
+     5162    0.007    0.000    0.014    0.000 /var/www/driva/venv/lib/python3.5/site-packages/pandas/types/dtypes.py:74(is_dtype)
+     3797    0.007    0.000    0.014    0.000 /var/www/driva/venv/lib/python3.5/site-packages/numpy/linalg/linalg.py:139(_commonType)
+     1250    0.006    0.000    0.006    0.000 {method 'reduce' of 'numpy.ufunc' objects}
+        7    0.006    0.001    0.007    0.001 {built-in method pandas.tslib.array_to_datetime}
+    15188    0.006    0.000    0.009    0.000 /var/www/driva/venv/lib/python3.5/site-packages/numpy/linalg/linalg.py:111(isComplexType)
+     61/7    0.006    0.000    0.186    0.027 /var/www/driva/venv/lib/python3.5/site-packages/rdp/__init__.py:37(_rdp)
+     7882    0.006    0.000    0.006    0.000 {method 'ravel' of 'numpy.ndarray' objects}
+      227    0.006    0.000    0.014    0.000 /var/www/driva/venv/lib/python3.5/site-packages/pandas/core/internals.py:2841(_rebuild_blknos_and_blklocs)
+     9553    0.006    0.000    0.007    0.000 {built-in method builtins.hasattr}
+3317/3305    0.005    0.000    0.008    0.000 /var/www/driva/venv/lib/python3.5/site-packages/pandas/types/common.py:341(_get_dtype_type)
+      397    0.005    0.000    0.027    0.000 /var/www/driva/venv/lib/python3.5/site-packages/pandas/core/algorithms.py:984(take_nd)
+     3797    0.005    0.000    0.008    0.000 /var/www/driva/venv/lib/python3.5/site-packages/numpy/linalg/linalg.py:209(_assertNdSquareness)
+
+
+--------------------------------------------------------------------------------
+
+10.2.0.11 - - [27/Jan/2017 01:30:07] "POST / HTTP/1.1" 200 -
+--------------------------------------------------------------------------------
+PATH: '/'
+         1777441 function calls (1769399 primitive calls) in 3.782 seconds
+
+   Ordered by: internal time, call count
+   List reduced from 2006 to 30 due to restriction <30>
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+      738    0.536    0.001    0.541    0.001 /var/www/driva/venv/lib/python3.5/site-packages/shapely/topology.py:63(__call__)
+        8    0.387    0.048    0.387    0.048 {method 'execute' of 'psycopg2.extensions.cursor' objects}
+    25810    0.239    0.000    1.290    0.000 /var/www/driva/venv/lib/python3.5/site-packages/rdp/__init__.py:18(pldist)
+     2816    0.223    0.000    0.258    0.000 {built-in method builtins.sum}
+    25810    0.192    0.000    0.598    0.000 /var/www/driva/venv/lib/python3.5/site-packages/numpy/linalg/linalg.py:1723(det)
+    51648    0.190    0.000    0.456    0.000 /var/www/driva/venv/lib/python3.5/site-packages/numpy/linalg/linalg.py:1976(norm)
+93546/93483    0.183    0.000    0.185    0.000 {built-in method numpy.core.multiarray.array}
+    51621    0.110    0.000    0.110    0.000 {built-in method numpy.core.multiarray.dot}
+     1476    0.078    0.000    0.080    0.000 /var/www/driva/venv/lib/python3.5/site-packages/shapely/topology.py:76(__call__)
+    88984    0.062    0.000    0.239    0.000 /var/www/driva/venv/lib/python3.5/site-packages/numpy/core/numeric.py:414(asarray)
+        8    0.056    0.007    0.056    0.007 {built-in method psycopg2._psycopg._connect}
+    25826    0.050    0.000    0.050    0.000 {method 'astype' of 'numpy.generic' objects}
+    669/9    0.045    0.000    1.345    0.149 /var/www/driva/venv/lib/python3.5/site-packages/rdp/__init__.py:37(_rdp)
+    25810    0.045    0.000    0.086    0.000 /var/www/driva/venv/lib/python3.5/site-packages/numpy/linalg/linalg.py:139(_commonType)
+       15    0.044    0.003    0.045    0.003 /var/www/driva/venv/lib/python3.5/site-packages/shapely/ops.py:116(cascaded_union)
+   103240    0.043    0.000    0.061    0.000 /var/www/driva/venv/lib/python3.5/site-packages/numpy/linalg/linalg.py:111(isComplexType)
+   204717    0.041    0.000    0.041    0.000 {built-in method builtins.issubclass}
+   149397    0.041    0.000    0.052    0.000 {built-in method builtins.isinstance}
+    52916    0.039    0.000    0.039    0.000 {method 'ravel' of 'numpy.ndarray' objects}
+     1556    0.038    0.000    0.080    0.000 /var/www/driva/venv/lib/python3.5/site-packages/scipy/interpolate/interpolate.py:1633(_construct_from_derivatives)
+        2    0.037    0.018    0.037    0.018 {built-in method gc.collect}
+    25810    0.035    0.000    0.054    0.000 /var/www/driva/venv/lib/python3.5/site-packages/numpy/linalg/linalg.py:209(_assertNdSquareness)
+112865/106363    0.027    0.000    0.040    0.000 {built-in method builtins.len}
+        7    0.027    0.004    0.029    0.004 {built-in method pandas.tslib.array_to_datetime}
+     7696    0.024    0.000    0.026    0.000 /var/www/driva/venv/lib/python3.5/site-packages/pandas/core/common.py:180(_maybe_box_datetimelike)
+        7    0.021    0.003    0.021    0.003 {built-in method io.open}
+    25810    0.020    0.000    0.024    0.000 /var/www/driva/venv/lib/python3.5/site-packages/numpy/linalg/linalg.py:198(_assertRankAtLeast2)
+     2303    0.019    0.000    0.049    0.000 /var/www/driva/venv/lib/python3.5/site-packages/shapely/geometry/base.py:62(geom_factory)
+     3112    0.018    0.000    0.030    0.000 /var/www/driva/venv/lib/python3.5/site-packages/scipy/special/basic.py:2122(comb)
+    25822    0.017    0.000    0.024    0.000 /var/www/driva/venv/lib/python3.5/site-packages/numpy/core/numeric.py:2064(isscalar)
+
+
+--------------------------------------------------------------------------------
+
+10.2.0.11 - - [27/Jan/2017 01:30:16] "POST / HTTP/1.1" 200 -
+--------------------------------------------------------------------------------
+PATH: '/'
+         14054519 function calls (14045059 primitive calls) in 29.898 seconds
+
+   Ordered by: internal time, call count
+   List reduced from 2119 to 30 due to restriction <30>
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+    11400    3.930    0.000    4.009    0.000 /var/www/driva/venv/lib/python3.5/site-packages/shapely/topology.py:63(__call__)
+   305793    3.074    0.000   18.605    0.000 /var/www/driva/venv/lib/python3.5/site-packages/rdp/__init__.py:18(pldist)
+999509/999446    2.789    0.000    2.792    0.000 {built-in method numpy.core.multiarray.array}
+   611579    2.788    0.000    2.788    0.000 {built-in method numpy.core.multiarray.dot}
+   305789    2.473    0.000    8.405    0.000 /var/www/driva/venv/lib/python3.5/site-packages/numpy/linalg/linalg.py:1723(det)
+   611622    2.399    0.000    7.130    0.000 /var/www/driva/venv/lib/python3.5/site-packages/numpy/linalg/linalg.py:1976(norm)
+        4    1.055    0.264    1.055    0.264 {method 'execute' of 'psycopg2.extensions.cursor' objects}
+    22800    1.025    0.000    1.056    0.000 /var/www/driva/venv/lib/python3.5/site-packages/shapely/topology.py:76(__call__)
+   988538    0.721    0.000    3.503    0.000 /var/www/driva/venv/lib/python3.5/site-packages/numpy/core/numeric.py:414(asarray)
+   305805    0.646    0.000    0.646    0.000 {method 'astype' of 'numpy.generic' objects}
+   305789    0.573    0.000    1.100    0.000 /var/www/driva/venv/lib/python3.5/site-packages/numpy/linalg/linalg.py:139(_commonType)
+   4533/5    0.561    0.000   19.251    3.850 /var/www/driva/venv/lib/python3.5/site-packages/rdp/__init__.py:37(_rdp)
+  1223156    0.526    0.000    0.747    0.000 /var/www/driva/venv/lib/python3.5/site-packages/numpy/linalg/linalg.py:111(isComplexType)
+   612176    0.500    0.000    0.500    0.000 {method 'ravel' of 'numpy.ndarray' objects}
+  2197877    0.456    0.000    0.456    0.000 {built-in method builtins.issubclass}
+   305789    0.427    0.000    0.682    0.000 /var/www/driva/venv/lib/python3.5/site-packages/numpy/linalg/linalg.py:209(_assertNdSquareness)
+    34219    0.274    0.000    0.697    0.000 /var/www/driva/venv/lib/python3.5/site-packages/shapely/geometry/base.py:62(geom_factory)
+        7    0.270    0.039    0.271    0.039 /var/www/driva/venv/lib/python3.5/site-packages/shapely/ops.py:116(cascaded_union)
+    11598    0.268    0.000    0.560    0.000 /var/www/driva/venv/lib/python3.5/site-packages/scipy/interpolate/interpolate.py:1633(_construct_from_derivatives)
+   305789    0.245    0.000    0.311    0.000 /var/www/driva/venv/lib/python3.5/site-packages/numpy/linalg/linalg.py:198(_assertRankAtLeast2)
+   305789    0.226    0.000    0.226    0.000 /var/www/driva/venv/lib/python3.5/site-packages/numpy/linalg/linalg.py:219(_assertNoEmpty2d)
+   305801    0.216    0.000    0.310    0.000 /var/www/driva/venv/lib/python3.5/site-packages/numpy/core/numeric.py:2064(isscalar)
+   305789    0.190    0.000    0.266    0.000 /var/www/driva/venv/lib/python3.5/site-packages/numpy/linalg/linalg.py:124(_realType)
+    59440    0.184    0.000    0.193    0.000 /var/www/driva/venv/lib/python3.5/site-packages/pandas/core/common.py:180(_maybe_box_datetimelike)
+    11400    0.173    0.000    0.227    0.000 /var/www/driva/venv/lib/python3.5/site-packages/shapely/geometry/point.py:188(geos_point_from_py)
+        7    0.168    0.024    0.181    0.026 {built-in method pandas.tslib.array_to_datetime}
+   306390    0.167    0.000    0.270    0.000 {built-in method builtins.max}
+   107768    0.152    0.000    0.152    0.000 /var/www/driva/venv/lib/python3.5/site-packages/shapely/geometry/base.py:210(empty)
+   493411    0.150    0.000    0.159    0.000 {built-in method builtins.isinstance}
+    11400    0.147    0.000    6.821    0.001 /var/www/driva/ai/rail_detection.py:95(average_ways_inside_circle)
+
+
+--------------------------------------------------------------------------------
+
+10.2.0.11 - - [27/Jan/2017 01:30:54] "POST / HTTP/1.1" 200 -
+--------------------------------------------------------------------------------
+PATH: '/'
+         2135898 function calls (2130217 primitive calls) in 10.750 seconds
+
+   Ordered by: internal time, call count
+   List reduced from 2019 to 30 due to restriction <30>
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+        4    3.903    0.976    3.903    0.976 {method 'execute' of 'psycopg2.extensions.cursor' objects}
+      718    1.831    0.003    1.835    0.003 /var/www/driva/venv/lib/python3.5/site-packages/shapely/topology.py:63(__call__)
+        7    1.571    0.224    1.571    0.224 {built-in method io.open}
+    39649    0.381    0.000    2.019    0.000 /var/www/driva/venv/lib/python3.5/site-packages/rdp/__init__.py:18(pldist)
+    39640    0.303    0.000    0.945    0.000 /var/www/driva/venv/lib/python3.5/site-packages/numpy/linalg/linalg.py:1723(det)
+    79324    0.298    0.000    0.697    0.000 /var/www/driva/venv/lib/python3.5/site-packages/numpy/linalg/linalg.py:1976(norm)
+137845/137782    0.272    0.000    0.276    0.000 {built-in method numpy.core.multiarray.array}
+    79281    0.151    0.000    0.151    0.000 {built-in method numpy.core.multiarray.dot}
+     1436    0.117    0.000    0.119    0.000 /var/www/driva/venv/lib/python3.5/site-packages/shapely/topology.py:76(__call__)
+   134367    0.095    0.000    0.366    0.000 /var/www/driva/venv/lib/python3.5/site-packages/numpy/core/numeric.py:414(asarray)
+    39656    0.079    0.000    0.079    0.000 {method 'astype' of 'numpy.generic' objects}
+    39640    0.072    0.000    0.138    0.000 /var/www/driva/venv/lib/python3.5/site-packages/numpy/linalg/linalg.py:139(_commonType)
+    793/5    0.070    0.000    2.101    0.420 /var/www/driva/venv/lib/python3.5/site-packages/rdp/__init__.py:37(_rdp)
+        7    0.069    0.010    0.070    0.010 /var/www/driva/venv/lib/python3.5/site-packages/shapely/ops.py:116(cascaded_union)
+   158560    0.068    0.000    0.097    0.000 /var/www/driva/venv/lib/python3.5/site-packages/numpy/linalg/linalg.py:111(isComplexType)
+   297621    0.066    0.000    0.066    0.000 {built-in method builtins.issubclass}
+    79877    0.061    0.000    0.061    0.000 {method 'ravel' of 'numpy.ndarray' objects}
+     2328    0.057    0.000    0.119    0.000 /var/www/driva/venv/lib/python3.5/site-packages/scipy/interpolate/interpolate.py:1633(_construct_from_derivatives)
+    39640    0.055    0.000    0.086    0.000 /var/www/driva/venv/lib/python3.5/site-packages/numpy/linalg/linalg.py:209(_assertNdSquareness)
+        7    0.038    0.005    0.041    0.006 {built-in method pandas.tslib.array_to_datetime}
+   122630    0.035    0.000    0.043    0.000 {built-in method builtins.isinstance}
+        2    0.035    0.017    0.035    0.017 {built-in method gc.collect}
+    10474    0.033    0.000    0.035    0.000 /var/www/driva/venv/lib/python3.5/site-packages/pandas/core/common.py:180(_maybe_box_datetimelike)
+        4    0.030    0.008    0.030    0.008 {built-in method psycopg2._psycopg._connect}
+    39640    0.030    0.000    0.038    0.000 /var/www/driva/venv/lib/python3.5/site-packages/numpy/linalg/linalg.py:198(_assertRankAtLeast2)
+     4656    0.028    0.000    0.046    0.000 /var/www/driva/venv/lib/python3.5/site-packages/scipy/special/basic.py:2122(comb)
+    39652    0.026    0.000    0.038    0.000 /var/www/driva/venv/lib/python3.5/site-packages/numpy/core/numeric.py:2064(isscalar)
+    39640    0.026    0.000    0.026    0.000 /var/www/driva/venv/lib/python3.5/site-packages/numpy/linalg/linalg.py:219(_assertNoEmpty2d)
+100443/96107    0.025    0.000    0.038    0.000 {built-in method builtins.len}
+       11    0.025    0.002    0.025    0.002 {method 'recv' of '_socket.socket' objects}
+
+
+--------------------------------------------------------------------------------
+
+10.2.0.11 - - [27/Jan/2017 01:31:13] "POST / HTTP/1.1" 200 -
+--------------------------------------------------------------------------------
+PATH: '/'
+         1300541 function calls (1296399 primitive calls) in 2.159 seconds
+
+   Ordered by: internal time, call count
+   List reduced from 1999 to 30 due to restriction <30>
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+        4    0.212    0.053    0.212    0.053 {method 'execute' of 'psycopg2.extensions.cursor' objects}
+    21460    0.203    0.000    1.057    0.000 /var/www/driva/venv/lib/python3.5/site-packages/rdp/__init__.py:18(pldist)
+    21460    0.161    0.000    0.490    0.000 /var/www/driva/venv/lib/python3.5/site-packages/numpy/linalg/linalg.py:1723(det)
+    42930    0.158    0.000    0.365    0.000 /var/www/driva/venv/lib/python3.5/site-packages/numpy/linalg/linalg.py:1976(norm)
+76576/76517    0.135    0.000    0.137    0.000 {built-in method numpy.core.multiarray.array}
+    42921    0.073    0.000    0.073    0.000 {built-in method numpy.core.multiarray.dot}
+    74083    0.053    0.000    0.186    0.000 /var/www/driva/venv/lib/python3.5/site-packages/numpy/core/numeric.py:414(asarray)
+    21474    0.040    0.000    0.040    0.000 {method 'astype' of 'numpy.generic' objects}
+        2    0.039    0.019    0.039    0.019 {built-in method gc.collect}
+        7    0.038    0.005    0.041    0.006 {built-in method pandas.tslib.array_to_datetime}
+    21460    0.038    0.000    0.072    0.000 /var/www/driva/venv/lib/python3.5/site-packages/numpy/linalg/linalg.py:139(_commonType)
+    409/5    0.038    0.000    1.101    0.220 /var/www/driva/venv/lib/python3.5/site-packages/rdp/__init__.py:37(_rdp)
+    85840    0.036    0.000    0.051    0.000 /var/www/driva/venv/lib/python3.5/site-packages/numpy/linalg/linalg.py:111(isComplexType)
+   165512    0.034    0.000    0.034    0.000 {built-in method builtins.issubclass}
+    43381    0.033    0.000    0.033    0.000 {method 'ravel' of 'numpy.ndarray' objects}
+     1092    0.033    0.000    0.034    0.000 /var/www/driva/venv/lib/python3.5/site-packages/shapely/topology.py:76(__call__)
+     1398    0.032    0.000    0.067    0.000 /var/www/driva/venv/lib/python3.5/site-packages/scipy/interpolate/interpolate.py:1633(_construct_from_derivatives)
+        4    0.031    0.008    0.031    0.008 {built-in method psycopg2._psycopg._connect}
+    21460    0.029    0.000    0.046    0.000 /var/www/driva/venv/lib/python3.5/site-packages/numpy/linalg/linalg.py:209(_assertNdSquareness)
+    89404    0.026    0.000    0.034    0.000 {built-in method builtins.isinstance}
+        7    0.021    0.003    0.022    0.003 /var/www/driva/venv/lib/python3.5/site-packages/shapely/ops.py:116(cascaded_union)
+     6518    0.020    0.000    0.021    0.000 /var/www/driva/venv/lib/python3.5/site-packages/pandas/core/common.py:180(_maybe_box_datetimelike)
+80311/77085    0.018    0.000    0.025    0.000 {built-in method builtins.len}
+    21460    0.016    0.000    0.020    0.000 /var/www/driva/venv/lib/python3.5/site-packages/numpy/linalg/linalg.py:198(_assertRankAtLeast2)
+     2796    0.016    0.000    0.026    0.000 /var/www/driva/venv/lib/python3.5/site-packages/scipy/special/basic.py:2122(comb)
+    21472    0.014    0.000    0.020    0.000 /var/www/driva/venv/lib/python3.5/site-packages/numpy/core/numeric.py:2064(isscalar)
+    21460    0.014    0.000    0.014    0.000 /var/www/driva/venv/lib/python3.5/site-packages/numpy/linalg/linalg.py:219(_assertNoEmpty2d)
+    22063    0.012    0.000    0.025    0.000 {built-in method builtins.max}
+    21460    0.012    0.000    0.017    0.000 /var/www/driva/venv/lib/python3.5/site-packages/numpy/linalg/linalg.py:124(_realType)
+       29    0.012    0.000    0.012    0.000 {built-in method zlib.compress}
+
+
+--------------------------------------------------------------------------------
+
+10.2.0.11 - - [27/Jan/2017 01:35:08] "POST / HTTP/1.1" 200 -
+--------------------------------------------------------------------------------
+PATH: '/'
+         832287 function calls (824921 primitive calls) in 1.631 seconds
+
+   Ordered by: internal time, call count
+   List reduced from 2007 to 30 due to restriction <30>
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+     1726    0.266    0.000    0.302    0.000 {built-in method builtins.sum}
+      136    0.170    0.001    0.171    0.001 /var/www/driva/venv/lib/python3.5/site-packages/shapely/topology.py:63(__call__)
+        4    0.088    0.022    0.088    0.022 {method 'execute' of 'psycopg2.extensions.cursor' objects}
+     6006    0.054    0.000    0.273    0.000 /var/www/driva/venv/lib/python3.5/site-packages/rdp/__init__.py:18(pldist)
+     6006    0.043    0.000    0.129    0.000 /var/www/driva/venv/lib/python3.5/site-packages/numpy/linalg/linalg.py:1723(det)
+    12020    0.043    0.000    0.090    0.000 /var/www/driva/venv/lib/python3.5/site-packages/numpy/linalg/linalg.py:1976(norm)
+26937/26878    0.041    0.000    0.042    0.000 {built-in method numpy.core.multiarray.array}
+        2    0.033    0.017    0.033    0.017 {built-in method gc.collect}
+   121545    0.032    0.000    0.044    0.000 {built-in method builtins.isinstance}
+        4    0.027    0.007    0.027    0.007 {built-in method psycopg2._psycopg._connect}
+56893/50570    0.017    0.000    0.024    0.000 {built-in method builtins.len}
+    12343    0.016    0.000    0.032    0.000 /var/www/driva/venv/lib/python3.5/site-packages/pandas/types/dtypes.py:74(is_dtype)
+        7    0.016    0.002    0.018    0.003 {built-in method pandas.tslib.array_to_datetime}
+    23439    0.016    0.000    0.052    0.000 /var/www/driva/venv/lib/python3.5/site-packages/numpy/core/numeric.py:414(asarray)
+      272    0.016    0.000    0.016    0.000 /var/www/driva/venv/lib/python3.5/site-packages/shapely/topology.py:76(__call__)
+        7    0.014    0.002    0.015    0.002 /var/www/driva/venv/lib/python3.5/site-packages/shapely/ops.py:116(cascaded_union)
+    11643    0.014    0.000    0.021    0.000 /var/www/driva/venv/lib/python3.5/site-packages/pandas/types/common.py:341(_get_dtype_type)
+    62377    0.013    0.000    0.013    0.000 {built-in method builtins.issubclass}
+    12013    0.012    0.000    0.012    0.000 {built-in method numpy.core.multiarray.dot}
+      538    0.012    0.000    0.026    0.000 /var/www/driva/venv/lib/python3.5/site-packages/scipy/interpolate/interpolate.py:1633(_construct_from_derivatives)
+    20279    0.012    0.000    0.013    0.000 {built-in method builtins.hasattr}
+     6020    0.011    0.000    0.011    0.000 {method 'astype' of 'numpy.generic' objects}
+      423    0.010    0.000    0.025    0.000 /var/www/driva/venv/lib/python3.5/site-packages/pandas/core/internals.py:2841(_rebuild_blknos_and_blklocs)
+     6006    0.010    0.000    0.020    0.000 /var/www/driva/venv/lib/python3.5/site-packages/numpy/linalg/linalg.py:139(_commonType)
+    133/5    0.010    0.000    0.284    0.057 /var/www/driva/venv/lib/python3.5/site-packages/rdp/__init__.py:37(_rdp)
+    24024    0.010    0.000    0.014    0.000 /var/www/driva/venv/lib/python3.5/site-packages/numpy/linalg/linalg.py:111(isComplexType)
+      215    0.009    0.000    0.115    0.001 /var/www/driva/venv/lib/python3.5/site-packages/pandas/io/packers.py:186(read)
+    13331    0.009    0.000    0.009    0.000 {method 'ravel' of 'numpy.ndarray' objects}
+15807/15794    0.009    0.000    0.022    0.000 {built-in method builtins.getattr}
+        4    0.008    0.002    0.008    0.002 {method 'recv_into' of '_socket.socket' objects}
+
+
+--------------------------------------------------------------------------------
+
+10.2.0.11 - - [27/Jan/2017 01:35:18] "POST / HTTP/1.1" 200 -
+--------------------------------------------------------------------------------
+PATH: '/'
+         5279139 function calls (5271215 primitive calls) in 25.915 seconds
+
+   Ordered by: internal time, call count
+   List reduced from 2020 to 30 due to restriction <30>
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+     2920   15.688    0.005   15.708    0.005 /var/www/driva/venv/lib/python3.5/site-packages/shapely/topology.py:63(__call__)
+        6    1.072    0.179    1.072    0.179 {method 'execute' of 'psycopg2.extensions.cursor' objects}
+   108779    1.040    0.000    5.836    0.000 /var/www/driva/venv/lib/python3.5/site-packages/rdp/__init__.py:18(pldist)
+   108779    0.834    0.000    2.686    0.000 /var/www/driva/venv/lib/python3.5/site-packages/numpy/linalg/linalg.py:1723(det)
+   217704    0.822    0.000    2.123    0.000 /var/www/driva/venv/lib/python3.5/site-packages/numpy/linalg/linalg.py:1976(norm)
+     5840    0.801    0.000    0.809    0.000 /var/www/driva/venv/lib/python3.5/site-packages/shapely/topology.py:76(__call__)
+364499/364436    0.794    0.000    0.801    0.000 {built-in method numpy.core.multiarray.array}
+   217559    0.619    0.000    0.619    0.000 {built-in method numpy.core.multiarray.dot}
+   359713    0.258    0.000    1.052    0.000 /var/www/driva/venv/lib/python3.5/site-packages/numpy/core/numeric.py:414(asarray)
+   108795    0.221    0.000    0.221    0.000 {method 'astype' of 'numpy.generic' objects}
+   108779    0.194    0.000    0.371    0.000 /var/www/driva/venv/lib/python3.5/site-packages/numpy/linalg/linalg.py:139(_commonType)
+   435116    0.190    0.000    0.267    0.000 /var/www/driva/venv/lib/python3.5/site-packages/numpy/linalg/linalg.py:111(isComplexType)
+   1521/7    0.186    0.000    6.048    0.864 /var/www/driva/venv/lib/python3.5/site-packages/rdp/__init__.py:37(_rdp)
+   218145    0.167    0.000    0.167    0.000 {method 'ravel' of 'numpy.ndarray' objects}
+   792621    0.159    0.000    0.159    0.000 {built-in method builtins.issubclass}
+   108779    0.150    0.000    0.236    0.000 /var/www/driva/venv/lib/python3.5/site-packages/numpy/linalg/linalg.py:209(_assertNdSquareness)
+       11    0.136    0.012    0.136    0.012 /var/www/driva/venv/lib/python3.5/site-packages/shapely/ops.py:116(cascaded_union)
+     9085    0.125    0.000    0.125    0.000 {built-in method builtins.locals}
+     5296    0.121    0.000    0.254    0.000 /var/www/driva/venv/lib/python3.5/site-packages/scipy/interpolate/interpolate.py:1633(_construct_from_derivatives)
+   108779    0.084    0.000    0.106    0.000 /var/www/driva/venv/lib/python3.5/site-packages/numpy/linalg/linalg.py:198(_assertRankAtLeast2)
+     9085    0.081    0.000    0.315    0.000 /var/www/driva/venv/lib/python3.5/site-packages/shapely/geometry/base.py:62(geom_factory)
+    26046    0.079    0.000    0.083    0.000 /var/www/driva/venv/lib/python3.5/site-packages/pandas/core/common.py:180(_maybe_box_datetimelike)
+   108779    0.074    0.000    0.074    0.000 /var/www/driva/venv/lib/python3.5/site-packages/numpy/linalg/linalg.py:219(_assertNoEmpty2d)
+   108791    0.073    0.000    0.106    0.000 /var/www/driva/venv/lib/python3.5/site-packages/numpy/core/numeric.py:2064(isscalar)
+        7    0.068    0.010    0.073    0.010 {built-in method pandas.tslib.array_to_datetime}
+   221012    0.067    0.000    0.074    0.000 {built-in method builtins.isinstance}
+   108779    0.060    0.000    0.086    0.000 /var/www/driva/venv/lib/python3.5/site-packages/numpy/linalg/linalg.py:124(_realType)
+    10592    0.059    0.000    0.098    0.000 /var/www/driva/venv/lib/python3.5/site-packages/scipy/special/basic.py:2122(comb)
+   109329    0.058    0.000    0.105    0.000 {built-in method builtins.max}
+211307/205516    0.051    0.000    0.092    0.000 {built-in method builtins.len}
+
+
+--------------------------------------------------------------------------------
+
+10.2.0.11 - - [27/Jan/2017 01:35:54] "POST / HTTP/1.1" 200 -
+--------------------------------------------------------------------------------
+PATH: '/'
+         15209813 function calls (15201440 primitive calls) in 38.775 seconds
+
+   Ordered by: internal time, call count
+   List reduced from 2034 to 30 due to restriction <30>
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+    11738   11.099    0.001   11.179    0.001 /var/www/driva/venv/lib/python3.5/site-packages/shapely/topology.py:63(__call__)
+   333759    3.300    0.000   18.631    0.000 /var/www/driva/venv/lib/python3.5/site-packages/rdp/__init__.py:18(pldist)
+   333759    2.594    0.000    8.479    0.000 /var/www/driva/venv/lib/python3.5/site-packages/numpy/linalg/linalg.py:1723(det)
+1094718/1094655    2.582    0.000    2.586    0.000 {built-in method numpy.core.multiarray.array}
+   667562    2.568    0.000    6.858    0.000 /var/www/driva/venv/lib/python3.5/site-packages/numpy/linalg/linalg.py:1976(norm)
+   667519    2.189    0.000    2.189    0.000 {built-in method numpy.core.multiarray.dot}
+       16    1.805    0.113    1.806    0.113 {method 'execute' of 'psycopg2.extensions.cursor' objects}
+    23476    1.465    0.000    1.497    0.000 /var/www/driva/venv/lib/python3.5/site-packages/shapely/topology.py:76(__call__)
+  1085393    0.779    0.000    3.354    0.000 /var/www/driva/venv/lib/python3.5/site-packages/numpy/core/numeric.py:414(asarray)
+   333775    0.685    0.000    0.685    0.000 {method 'astype' of 'numpy.generic' objects}
+   333759    0.605    0.000    1.156    0.000 /var/www/driva/venv/lib/python3.5/site-packages/numpy/linalg/linalg.py:139(_commonType)
+  3819/17    0.597    0.000   19.294    1.135 /var/www/driva/venv/lib/python3.5/site-packages/rdp/__init__.py:37(_rdp)
+  1335036    0.562    0.000    0.804    0.000 /var/www/driva/venv/lib/python3.5/site-packages/numpy/linalg/linalg.py:111(isComplexType)
+   667908    0.532    0.000    0.532    0.000 {method 'ravel' of 'numpy.ndarray' objects}
+  2400371    0.493    0.000    0.493    0.000 {built-in method builtins.issubclass}
+   333759    0.463    0.000    0.731    0.000 /var/www/driva/venv/lib/python3.5/site-packages/numpy/linalg/linalg.py:209(_assertNdSquareness)
+    13774    0.322    0.000    0.675    0.000 /var/www/driva/venv/lib/python3.5/site-packages/scipy/interpolate/interpolate.py:1633(_construct_from_derivatives)
+    35323    0.301    0.000    0.819    0.000 /var/www/driva/venv/lib/python3.5/site-packages/shapely/geometry/base.py:62(geom_factory)
+   333759    0.264    0.000    0.333    0.000 /var/www/driva/venv/lib/python3.5/site-packages/numpy/linalg/linalg.py:198(_assertRankAtLeast2)
+       31    0.235    0.008    0.236    0.008 /var/www/driva/venv/lib/python3.5/site-packages/shapely/ops.py:116(cascaded_union)
+   333759    0.233    0.000    0.233    0.000 /var/www/driva/venv/lib/python3.5/site-packages/numpy/linalg/linalg.py:219(_assertNoEmpty2d)
+   333771    0.231    0.000    0.332    0.000 /var/www/driva/venv/lib/python3.5/site-packages/numpy/core/numeric.py:2064(isscalar)
+    64064    0.199    0.000    0.210    0.000 /var/www/driva/venv/lib/python3.5/site-packages/pandas/core/common.py:180(_maybe_box_datetimelike)
+   333759    0.191    0.000    0.274    0.000 /var/www/driva/venv/lib/python3.5/site-packages/numpy/linalg/linalg.py:124(_realType)
+   334313    0.180    0.000    0.302    0.000 {built-in method builtins.max}
+        7    0.180    0.026    0.194    0.028 {built-in method pandas.tslib.array_to_datetime}
+    11738    0.179    0.000    0.234    0.000 /var/www/driva/venv/lib/python3.5/site-packages/shapely/geometry/point.py:188(geos_point_from_py)
+   111976    0.171    0.000    0.171    0.000 /var/www/driva/venv/lib/python3.5/site-packages/shapely/geometry/base.py:210(empty)
+   518741    0.157    0.000    0.164    0.000 {built-in method builtins.isinstance}
+    27548    0.156    0.000    0.259    0.000 /var/www/driva/venv/lib/python3.5/site-packages/scipy/special/basic.py:2122(comb)
+
+
+--------------------------------------------------------------------------------
+
+10.2.0.11 - - [27/Jan/2017 01:41:09] "POST / HTTP/1.1" 200 -
+--------------------------------------------------------------------------------
+PATH: '/'
+         1166282 function calls (1162122 primitive calls) in 1.900 seconds
+
+   Ordered by: internal time, call count
+   List reduced from 2017 to 30 due to restriction <30>
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+    19458    0.184    0.000    0.946    0.000 /var/www/driva/venv/lib/python3.5/site-packages/rdp/__init__.py:18(pldist)
+    38932    0.144    0.000    0.326    0.000 /var/www/driva/venv/lib/python3.5/site-packages/numpy/linalg/linalg.py:1976(norm)
+    19458    0.144    0.000    0.438    0.000 /var/www/driva/venv/lib/python3.5/site-packages/numpy/linalg/linalg.py:1723(det)
+        4    0.119    0.030    0.119    0.030 {method 'execute' of 'psycopg2.extensions.cursor' objects}
+70310/70251    0.119    0.000    0.120    0.000 {built-in method numpy.core.multiarray.array}
+    38917    0.064    0.000    0.064    0.000 {built-in method numpy.core.multiarray.dot}
+      194    0.062    0.000    0.063    0.000 /var/www/driva/venv/lib/python3.5/site-packages/shapely/topology.py:63(__call__)
+    67998    0.047    0.000    0.164    0.000 /var/www/driva/venv/lib/python3.5/site-packages/numpy/core/numeric.py:414(asarray)
+        2    0.038    0.019    0.038    0.019 {built-in method gc.collect}
+    19472    0.036    0.000    0.036    0.000 {method 'astype' of 'numpy.generic' objects}
+    19458    0.035    0.000    0.066    0.000 /var/www/driva/venv/lib/python3.5/site-packages/numpy/linalg/linalg.py:139(_commonType)
+    345/5    0.033    0.000    0.985    0.197 /var/www/driva/venv/lib/python3.5/site-packages/rdp/__init__.py:37(_rdp)
+    77832    0.032    0.000    0.046    0.000 /var/www/driva/venv/lib/python3.5/site-packages/numpy/linalg/linalg.py:111(isComplexType)
+     1386    0.032    0.000    0.067    0.000 /var/www/driva/venv/lib/python3.5/site-packages/scipy/interpolate/interpolate.py:1633(_construct_from_derivatives)
+   151205    0.030    0.000    0.030    0.000 {built-in method builtins.issubclass}
+    39354    0.029    0.000    0.029    0.000 {method 'ravel' of 'numpy.ndarray' objects}
+        4    0.029    0.007    0.029    0.007 {built-in method psycopg2._psycopg._connect}
+    19458    0.026    0.000    0.041    0.000 /var/www/driva/venv/lib/python3.5/site-packages/numpy/linalg/linalg.py:209(_assertNdSquareness)
+        7    0.026    0.004    0.028    0.004 {built-in method pandas.tslib.array_to_datetime}
+    84976    0.024    0.000    0.032    0.000 {built-in method builtins.isinstance}
+        7    0.020    0.003    0.020    0.003 /var/www/driva/venv/lib/python3.5/site-packages/shapely/ops.py:116(cascaded_union)
+     6270    0.019    0.000    0.020    0.000 /var/www/driva/venv/lib/python3.5/site-packages/pandas/core/common.py:180(_maybe_box_datetimelike)
+      388    0.017    0.000    0.018    0.000 /var/www/driva/venv/lib/python3.5/site-packages/shapely/topology.py:76(__call__)
+74747/71504    0.017    0.000    0.022    0.000 {built-in method builtins.len}
+     2772    0.015    0.000    0.025    0.000 /var/www/driva/venv/lib/python3.5/site-packages/scipy/special/basic.py:2122(comb)
+    19458    0.014    0.000    0.018    0.000 /var/www/driva/venv/lib/python3.5/site-packages/numpy/linalg/linalg.py:198(_assertRankAtLeast2)
+    19458    0.013    0.000    0.013    0.000 /var/www/driva/venv/lib/python3.5/site-packages/numpy/linalg/linalg.py:219(_assertNoEmpty2d)
+    19470    0.013    0.000    0.018    0.000 /var/www/driva/venv/lib/python3.5/site-packages/numpy/core/numeric.py:2064(isscalar)
+    20030    0.011    0.000    0.024    0.000 {built-in method builtins.max}
+    19458    0.011    0.000    0.016    0.000 /var/www/driva/venv/lib/python3.5/site-packages/numpy/linalg/linalg.py:124(_realType)
+
+
+--------------------------------------------------------------------------------
+
+10.2.0.11 - - [27/Jan/2017 01:41:11] "POST / HTTP/1.1" 200 -
+--------------------------------------------------------------------------------
+PATH: '/'
+         3121149 function calls (3114503 primitive calls) in 4.905 seconds
+
+   Ordered by: internal time, call count
+   List reduced from 2017 to 30 due to restriction <30>
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+    65505    0.619    0.000    3.191    0.000 /var/www/driva/venv/lib/python3.5/site-packages/rdp/__init__.py:18(pldist)
+    65505    0.486    0.000    1.487    0.000 /var/www/driva/venv/lib/python3.5/site-packages/numpy/linalg/linalg.py:1723(det)
+   131038    0.481    0.000    1.087    0.000 /var/www/driva/venv/lib/python3.5/site-packages/numpy/linalg/linalg.py:1976(norm)
+223505/223442    0.383    0.000    0.385    0.000 {built-in method numpy.core.multiarray.array}
+   131011    0.214    0.000    0.214    0.000 {built-in method numpy.core.multiarray.dot}
+   218969    0.151    0.000    0.530    0.000 /var/www/driva/venv/lib/python3.5/site-packages/numpy/core/numeric.py:414(asarray)
+      544    0.136    0.000    0.139    0.000 /var/www/driva/venv/lib/python3.5/site-packages/shapely/topology.py:63(__call__)
+    65521    0.127    0.000    0.127    0.000 {method 'astype' of 'numpy.generic' objects}
+    65505    0.116    0.000    0.226    0.000 /var/www/driva/venv/lib/python3.5/site-packages/numpy/linalg/linalg.py:139(_commonType)
+   262020    0.114    0.000    0.160    0.000 /var/www/driva/venv/lib/python3.5/site-packages/numpy/linalg/linalg.py:111(isComplexType)
+        4    0.113    0.028    0.113    0.028 {method 'execute' of 'psycopg2.extensions.cursor' objects}
+   1065/5    0.111    0.000    3.318    0.664 /var/www/driva/venv/lib/python3.5/site-packages/rdp/__init__.py:37(_rdp)
+   131874    0.098    0.000    0.098    0.000 {method 'ravel' of 'numpy.ndarray' objects}
+   486234    0.096    0.000    0.096    0.000 {built-in method builtins.issubclass}
+    65505    0.090    0.000    0.141    0.000 /var/www/driva/venv/lib/python3.5/site-packages/numpy/linalg/linalg.py:209(_assertNdSquareness)
+     3452    0.079    0.000    0.165    0.000 /var/www/driva/venv/lib/python3.5/site-packages/scipy/interpolate/interpolate.py:1633(_construct_from_derivatives)
+     1903    0.077    0.000    0.080    0.000 {built-in method builtins.sum}
+        7    0.075    0.011    0.076    0.011 /var/www/driva/venv/lib/python3.5/site-packages/shapely/ops.py:116(cascaded_union)
+        7    0.056    0.008    0.061    0.009 {built-in method pandas.tslib.array_to_datetime}
+    65505    0.049    0.000    0.062    0.000 /var/www/driva/venv/lib/python3.5/site-packages/numpy/linalg/linalg.py:198(_assertRankAtLeast2)
+    15828    0.049    0.000    0.051    0.000 /var/www/driva/venv/lib/python3.5/site-packages/pandas/core/common.py:180(_maybe_box_datetimelike)
+   174280    0.048    0.000    0.058    0.000 {built-in method builtins.isinstance}
+     1088    0.045    0.000    0.046    0.000 /var/www/driva/venv/lib/python3.5/site-packages/shapely/topology.py:76(__call__)
+        2    0.044    0.022    0.044    0.022 {built-in method gc.collect}
+    65517    0.043    0.000    0.061    0.000 /var/www/driva/venv/lib/python3.5/site-packages/numpy/core/numeric.py:2064(isscalar)
+    65505    0.042    0.000    0.042    0.000 /var/www/driva/venv/lib/python3.5/site-packages/numpy/linalg/linalg.py:219(_assertNoEmpty2d)
+     6904    0.038    0.000    0.063    0.000 /var/www/driva/venv/lib/python3.5/site-packages/scipy/special/basic.py:2122(comb)
+    65505    0.036    0.000    0.051    0.000 /var/www/driva/venv/lib/python3.5/site-packages/numpy/linalg/linalg.py:124(_realType)
+    66157    0.035    0.000    0.066    0.000 {built-in method builtins.max}
+133466/128611    0.030    0.000    0.044    0.000 {built-in method builtins.len}
+
+
+--------------------------------------------------------------------------------
+
+

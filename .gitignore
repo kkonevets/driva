@@ -1,0 +1,11 @@
+# Created by .ignore support plugin (hsz.mobi)
+ai/__pycache__/
+ai/cmatching.c
+ai/cmatching.cpython-36m-x86_64-linux-gnu.so
+batch/__pycache__/
+dev/.ipynb_checkpoints/
+dev/__pycache__/
+streem/__pycache__/
+test/__pycache__/
+.idea/
+/dev/.ipynb_checkpoints/

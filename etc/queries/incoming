@@ -1,0 +1,3 @@
+SELECT *
+FROM [MobileServiceIncoming].[dbo].[IncomingTrackPointsHeap] (nolock)
+where [DeviceToken] = %(user)s

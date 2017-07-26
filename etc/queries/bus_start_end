@@ -1,0 +1,73 @@
+select
+	temp.[DeviceToken],
+	temp.bus_inc_id,
+	all_tracks.IncomingTrackId as prev_inc_id
+into #temp_tb
+from (
+	  SELECT bus.[DeviceToken]
+		  ,bus.[IncomingTrackId] as bus_inc_id
+		  ,max(prev.[EndDate]) as prev_ed
+	  FROM  [MobileServiceStage].[dbo].[RichTracks] as prev (nolock)
+	  inner join (SELECT *
+			  FROM [MobileServiceStage].[dbo].[RichTracks] (nolock)
+			  where [TrackOrigin]='Bus' and [OriginChanged]=1) as bus
+	  on prev.EndDate <= bus.StartDate and prev.[DeviceToken]=bus.[DeviceToken]
+	  group by bus.[DeviceToken], bus.[IncomingTrackId]) as temp
+inner join (SELECT *
+	  FROM [MobileServiceStage].[dbo].[RichTracks] (nolock)) as all_tracks
+on all_tracks.[DeviceToken]=temp.[DeviceToken] and all_tracks.EndDate = temp.prev_ed
+order by [DeviceToken]
+;
+
+with tb_1 AS
+(
+  SELECT #temp_tb.DeviceToken, #temp_tb.prev_inc_id,  #temp_tb.bus_inc_id, virt.Latitude, virt.Longitude,
+        ROW_NUMBER() OVER (PARTITION BY [IncomingTrackId] order by Number desc) AS rn
+  FROM  [MobileServiceIncoming].[dbo].[v_AllTrackPoints] as virt (nolock)
+  inner join #temp_tb
+  on #temp_tb.[DeviceToken]=virt.[DeviceToken] and #temp_tb.prev_inc_id=virt.[IncomingTrackId]
+)
+
+SELECT *
+into #t1
+FROM tb_1
+where rn = 1
+;
+
+with tb_2 AS
+(
+  SELECT #temp_tb.DeviceToken, #temp_tb.prev_inc_id, #temp_tb.bus_inc_id, virt.Latitude, virt.Longitude,
+        ROW_NUMBER() OVER (PARTITION BY [IncomingTrackId] order by Number) AS rn
+  FROM  [MobileServiceIncoming].[dbo].[v_AllTrackPoints] as virt (nolock)
+  inner join #temp_tb
+  on #temp_tb.[DeviceToken]=virt.[DeviceToken] and #temp_tb.bus_inc_id=virt.[IncomingTrackId]
+)
+
+SELECT *
+into #t2
+FROM tb_2
+where rn = 1
+
+select
+	temp.DeviceToken,
+	temp.bus_inc_id,
+	temp.prev_inc_id,
+	max(temp.bus_lat) as bus_lat,
+	max(temp.bus_lon) as bus_lon,
+	max(temp.prev_lat) as prev_lat,
+	max(temp.prev_lon) as prev_lon
+from
+(select
+	DeviceToken,
+	bus_inc_id as bus_inc_id,
+	prev_inc_id as prev_inc_id,
+	Latitude as bus_lat,
+	Longitude as bus_lon,
+	NULL as prev_lat,
+	NULL  as prev_lon
+from #t2
+union
+select
+	DeviceToken, bus_inc_id, prev_inc_id, NULL, NULL, Latitude, Longitude
+from #t1) as temp
+group by temp.DeviceToken, temp.bus_inc_id, temp.prev_inc_id

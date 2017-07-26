@@ -1,0 +1,9 @@
+/****** Script for SelectTopNRows command from SSMS  ******/
+select  distinct 
+	HB.[DeviceToken]
+from [MobileServiceIncoming].[dbo].[Heartbeat] as HB
+inner join 
+(SELECT distinct [HeartbeatId]
+  FROM [MobileServiceIncoming].[dbo].[HeartbeatAdditionalParams]
+  where left([Value],6) = 'iPhone' and [Key] = 'device model' ) as HBAP
+on HB.id=HBAP.[HeartbeatId]

@@ -1,0 +1,5 @@
+set nocount on
+SELECT UserId, Id, IncomingTrackId
+INTO #Ids
+FROM [AutoBiographyStage].[dbo].[RichTracks]
+where [UserId] in (3579)

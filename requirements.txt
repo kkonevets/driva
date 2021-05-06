@@ -1,7 +1,7 @@
 Cython==0.25.2
 Fiona==1.7.5
 flask>=0.12.3
-Flask-Cors==3.0.2
+Flask-Cors==3.0.9
 geopandas==0.2.1
 gpxpy==1.1.2
 graphviz==0.6
